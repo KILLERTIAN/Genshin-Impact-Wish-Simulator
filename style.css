@@ -36,12 +36,11 @@ section {
 
 .container {
     display: flex;
-    height: 55%;
-    width: 55%;
+    height: 65%;
+    width: 65%;
     position: absolute;
     align-items: center;
     justify-content: center;
-
 }
 
 .container .banner-screen {
@@ -55,13 +54,14 @@ section {
 }
 
 .header-sidebar {
-    height: 55%;
+    height: 100%;
     width: 5%;
     display: flex;
-    position: relative;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    left: 50px;
+    left: 100px;
+    background-color: rgb(197, 197, 197);
 }
 
 .header-sidebar button {

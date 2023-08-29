@@ -75,3 +75,10 @@ section {
     justify-content: center;
     background-color: rgba(241, 28, 28, 0.658);
 }
+
+.header-sidebar button img {
+    display: flex;
+    height: 120%;
+    width: 150%;
+    cursor: pointer;
+}

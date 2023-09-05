@@ -2,7 +2,7 @@
 
 Trying to make the wish screen from Genshin Impact using HTML, CSS and JavaScript.
 
-preview
+Preview:-
 
 # License
 

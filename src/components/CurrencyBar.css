@@ -1,0 +1,31 @@
+.currency-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+  
+  .currency-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 7px;
+    background-color: rgb(0 0 0 / 40%);
+    border-radius: 10px;
+    margin: 0 8px;
+  }
+  .currency-item img{
+    height: 20px;
+    width: 20px;
+  }
+  .currency-item span{
+    color: #ecebf5;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 4px;
+  }

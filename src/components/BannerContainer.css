@@ -64,7 +64,7 @@
 .wish-button {
   display: flex;
   position: absolute;
-  bottom: 20px;
+  bottom: 2em;
   right: 10%;
 }
 
@@ -100,7 +100,7 @@
 
 .footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 2.5em;
   left: 15%;
   display: flex;
 }

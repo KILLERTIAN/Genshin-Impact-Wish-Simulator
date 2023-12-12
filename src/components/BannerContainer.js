@@ -52,7 +52,6 @@ function BannerContainer() {
       </div>
 
       <section>
-
         <div className="footer">
           <button>Shop</button>
           <button>Details</button>
@@ -61,8 +60,6 @@ function BannerContainer() {
         <div className="wish-button">
           <button>Wish x1
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 1</span>
-
-
           </button>
           <button>Wish x10
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 10</span>

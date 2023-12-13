@@ -47,7 +47,7 @@ function BannerContainer() {
         </button>
         <button className="std-banner" onClick={() => handleBannerChange('standard banner.webp')}>
           {/* Uncomment and add onClick handler for standard banner */}
-          <img src="images/standard banner.webp" alt="Std Banner" />
+          <img src="images/460696cfcd370411316c508959ca6b23.png" alt="Std Banner" />
         </button>
       </div>
 

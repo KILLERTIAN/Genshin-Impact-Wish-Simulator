@@ -6,9 +6,15 @@ import CurrencyBar from './CurrencyBar';
 
 function BannerContainer() {
   const [selectedBanner, setSelectedBanner] = useState('ayato3.3.webp');
+  const [activeBanner, setActiveBanner] = useState(null);
 
   const handleBannerChange = (banner) => {
     setSelectedBanner(banner);
+    setActiveBanner(banner); // Set the active banner when changing
+  };
+
+  const handleSidebarReset = () => {
+    setActiveBanner(null); // Reset the active banner
   };
 
   return (
@@ -35,19 +41,40 @@ function BannerContainer() {
         {/* Add more currency items as needed */}
       </div>
       <div className="header-sidebar">
-        <button className="lim-banner" onClick={() => handleBannerChange('ayato3.3.webp')}>
+      <button
+          className={`lim-banner ${activeBanner === 'ayato3.3.webp' ? 'active' : ''}`}
+          onClick={() => handleBannerChange('ayato3.3.webp')}
+        >
           <img src="images/ayato3.3.webp" alt="Lim Banner" />
         </button>
-        <button className="lim-banner" onClick={() => handleBannerChange('Raiden3.3.webp')}>
-          <img src="images/Raiden3.3.webp" alt="Lim Banner" />
+        <button
+          className={`lim-banner ${activeBanner === 'Raiden3.3.webp' ? 'active' : ''}`}
+          onClick={() => {
+            handleBannerChange('Raiden3.3.webp');
+            
+          }}
+        >
+          {activeBanner === 'Raiden3.3.webp' ? (
+            <img src="images/cb2dd55afc125e4d2e4d1ba1e659abf5.png" alt="Lim Banner" />
+          ) : (
+            <img src="images/198e6c25696161f5905fc2498788acb5.png" alt="Lim Banner" />
+          )}
         </button>
         <button className="wep-banner" onClick={() => handleBannerChange('weapon banner.jpg')}>
           {/* Uncomment and add onClick handler for weapon banner */}
           <img src="images/weapon banner.jpg" alt="Wep Banner" />
         </button>
-        <button className="std-banner" onClick={() => handleBannerChange('standard banner.webp')}>
-          {/* Uncomment and add onClick handler for standard banner */}
-          <img src="images/460696cfcd370411316c508959ca6b23.png" alt="Std Banner" />
+        <button className={`std-banner ${activeBanner === 'standard banner.webp' ? 'active' : ''}`}
+          onClick={() => {
+            handleBannerChange('standard banner.webp');
+            
+          }}>
+          {activeBanner === 'standard banner.webp' ? (
+            <img src="images/460696cfcd370411316c508959ca6b23.png" alt="Std Banner" />
+          ) : (
+            <img src="images/9f09ce550d7b5f24eaee126bf51a497b.png" alt="Std Banner" />
+          )}
+          
         </button>
       </div>
 

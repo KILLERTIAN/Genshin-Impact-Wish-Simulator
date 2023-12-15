@@ -1,5 +1,3 @@
-// BannerContainer.js
-
 import React, { useState } from 'react';
 import './BannerContainer.css';
 import CurrencyBar from './CurrencyBar';
@@ -10,11 +8,11 @@ function BannerContainer() {
 
   const handleBannerChange = (banner) => {
     setSelectedBanner(banner);
-    setActiveBanner(banner); // Set the active banner when changing
+    setActiveBanner(banner);
   };
 
   const handleSidebarReset = () => {
-    setActiveBanner(null); // Reset the active banner
+    setActiveBanner(null);
   };
 
   return (

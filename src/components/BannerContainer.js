@@ -21,7 +21,7 @@ function BannerContainer() {
       <div className="currency-bar">
         <div className="currency-item">
           <img src="images/Masterless Starglitter.webp" alt="Starglitter" />
-          <span className="amount">42</span>
+          <span className="amount">40</span>
         </div>
         <div className="currency-item">
           <img src="images/Masterless Stardust.webp" alt="Starglitter" />

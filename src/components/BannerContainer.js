@@ -17,7 +17,6 @@ function BannerContainer() {
 
   return (
     <div className="container">
-      {/* <CurrencyBar/> */}
       <div className="currency-bar">
         <div className="currency-item">
           <img src="images/Masterless Starglitter.webp" alt="Starglitter" />

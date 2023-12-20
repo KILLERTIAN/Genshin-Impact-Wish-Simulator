@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Create this file for your global styles
+import './App.css';
 
 import BannerContainer from './components/BannerContainer';
 import Banner from './components/Banner';

@@ -34,8 +34,6 @@ function BannerContainer() {
           <img src="images/Item_Intertwined_Fate.webp" alt="Starglitter" />
           <span className="amount">500</span>
         </div>
-
-        {/* Add more currency items as needed */}
       </div>
       <div className="header-sidebar">
       <button

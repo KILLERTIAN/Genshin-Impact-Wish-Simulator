@@ -56,7 +56,6 @@ function BannerContainer() {
           )}
         </button>
         <button className="wep-banner" onClick={() => handleBannerChange('weapon banner.jpg')}>
-
           <img src="images/weapon banner.jpg" alt="Wep Banner" />
         </button>
         <button className={`std-banner ${activeBanner === 'standard banner.webp' ? 'active' : ''}`}

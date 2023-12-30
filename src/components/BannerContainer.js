@@ -79,10 +79,14 @@ function BannerContainer() {
           <button>History</button>
         </div>
         <div className="wish-button">
-          <button>Wish x1
+          <button>
+            <img src="images/wishButton.png" alt="" />
+            Wish x1
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 1</span>
           </button>
-          <button>Wish x10
+          <button>
+          <img src="images/wishButton.png" alt="" />
+            Wish x10
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 10</span>
           </button>
         </div>

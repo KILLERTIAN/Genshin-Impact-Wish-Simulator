@@ -74,33 +74,39 @@
 
 .wish-button button {
   display: flex;
+  width: 100%;
+  /* position: absolute; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-right: 10px;
-  /* padding: 3px 50px; */
+
   font-size: 0.85em;
   font-weight: 800;
-  /* background-color: #eeeeee;
-  color: #7a4c06bd;
-  border: 0.125px solid #db860796;
-  box-shadow: -1px -1px 10px 0px #1b4e72ad;
-  border-radius: 25px; */
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  z-index: 2;
+  z-index: 5;
 }
-.wish-button button>img{
+.wish-button-bg {
+  background-image: url('../images/wishButton.png');
+  background-size: cover; /* You can adjust this based on your needs */
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff; /* Set text color to be visible on the button */
+  font-size: 16px; /* Set font size as needed */
+  padding: 15px 30px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.wish-button>img{
 z-index: 1;
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 50px;
-/* min-width: 200px;
-max-width: 250px; */
+position: relative;
+/* height: 50px; */
+min-width: 180px;
+max-width: 230px;
 }
 .wish-button button span{
   display: flex;

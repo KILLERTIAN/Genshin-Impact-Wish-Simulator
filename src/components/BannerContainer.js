@@ -36,7 +36,7 @@ function BannerContainer() {
         </div>
       </div>
       <div className="header-sidebar">
-      <button
+        <button
           className={`lim-banner ${activeBanner === 'ayato3.3.webp' ? 'active' : ''}`}
           onClick={() => handleBannerChange('ayato3.3.webp')}
         >
@@ -46,7 +46,7 @@ function BannerContainer() {
           className={`lim-banner ${activeBanner === 'Raiden3.3.webp' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('Raiden3.3.webp');
-            
+
           }}
         >
           {activeBanner === 'Raiden3.3.webp' ? (
@@ -61,14 +61,14 @@ function BannerContainer() {
         <button className={`std-banner ${activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('4136750a9f376ec5be876be16ec8bf96.png');
-            
+
           }}>
           {activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? (
             <img src="images/460696cfcd370411316c508959ca6b23.png" alt="Std Banner" />
           ) : (
             <img src="images/9f09ce550d7b5f24eaee126bf51a497b.png" alt="Std Banner" />
           )}
-          
+
         </button>
       </div>
 
@@ -79,13 +79,11 @@ function BannerContainer() {
           <button>History</button>
         </div>
         <div className="wish-button">
-          <button>
-            <img src="images/wishButton.png" alt="" />
+          <button className="wish-button-bg">
             Wish x1
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 1</span>
           </button>
-          <button>
-          <img src="images/wishButton.png" alt="" />
+          <button className="wish-button-bg">
             Wish x10
             <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 10</span>
           </button>

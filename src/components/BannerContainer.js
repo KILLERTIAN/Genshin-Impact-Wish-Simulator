@@ -1,3 +1,5 @@
+// BannerContainer.js
+
 import React, { useState } from 'react';
 import './BannerContainer.css';
 import CurrencyBar from './CurrencyBar';
@@ -46,7 +48,7 @@ function BannerContainer() {
           className={`lim-banner ${activeBanner === 'Raiden3.3.webp' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('Raiden3.3.webp');
-
+            handleSidebarReset();
           }}
         >
           {activeBanner === 'Raiden3.3.webp' ? (
@@ -58,17 +60,18 @@ function BannerContainer() {
         <button className="wep-banner" onClick={() => handleBannerChange('weapon banner.jpg')}>
           <img src="images/weapon banner.jpg" alt="Wep Banner" />
         </button>
-        <button className={`std-banner ${activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? 'active' : ''}`}
+        <button
+          className={`std-banner ${activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('4136750a9f376ec5be876be16ec8bf96.png');
-
-          }}>
+            handleSidebarReset();
+          }}
+        >
           {activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? (
             <img src="images/460696cfcd370411316c508959ca6b23.png" alt="Std Banner" />
           ) : (
             <img src="images/9f09ce550d7b5f24eaee126bf51a497b.png" alt="Std Banner" />
           )}
-
         </button>
       </div>
 
@@ -80,14 +83,23 @@ function BannerContainer() {
         </div>
         <div className="wish-button">
           <button className="wish-button-bg">
+            {/* Use the imported image directly in the button */}
+            <img src="images/wishButton.png" alt="" />
             Wish x1
-            <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 1</span>
+            <span>
+              <img src="images/Item_Intertwined_Fate.webp" alt="" />x 1
+            </span>
           </button>
           <button className="wish-button-bg">
+            {/* Use the imported image directly in the button */}
+            <img src="images/wishButton.png" alt="" />
             Wish x10
-            <span><img src="images/Item_Intertwined_Fate.webp" alt="" />x 10</span>
+            <span>
+              <img src="images/Item_Intertwined_Fate.webp" alt="" />x 10
+            </span>
           </button>
         </div>
+
       </section>
 
       <div className="banner-screen">

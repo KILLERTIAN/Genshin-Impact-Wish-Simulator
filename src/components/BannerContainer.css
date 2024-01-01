@@ -22,11 +22,11 @@
   overflow: hidden;
 }
 
-.banner-screen img{
+.banner-screen img {
   width: 100%;
   height: 100%;
-
 }
+
 .header-sidebar {
   height: 70%;
   width: 12%;
@@ -44,7 +44,6 @@
 .header-sidebar button {
   display: flex;
   position: relative;
-  /* height: 80px; */
   background: none;
   width: 100%;
   margin: 10px 0px;
@@ -75,12 +74,10 @@
 .wish-button button {
   display: flex;
   width: 100%;
-  /* position: absolute; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-right: 10px;
-
   font-size: 0.85em;
   font-weight: 800;
   border: none;
@@ -89,31 +86,22 @@
   transition: background-color 0.3s ease;
   z-index: 5;
 }
-.wish-button-bg {
-  background-image: url('../images/wishButton.png');
-  background-size: cover; /* You can adjust this based on your needs */
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #ffffff; /* Set text color to be visible on the button */
-  font-size: 16px; /* Set font size as needed */
-  padding: 15px 30px; /* Adjust padding as needed */
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+
+
+.wish-button>img {
+  z-index: 1;
+  position: relative;
+  min-width: 180px;
+  max-width: 230px;
 }
-.wish-button>img{
-z-index: 1;
-position: relative;
-/* height: 50px; */
-min-width: 180px;
-max-width: 230px;
-}
-.wish-button button span{
+
+.wish-button button span {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
 .wish-button button span>img {
   margin-right: 5px;
   height: 20px;
@@ -140,5 +128,3 @@ max-width: 230px;
   box-shadow: -1px -1px 13px 0px #1b4e72ad;
   transition: background-color 0.3s ease;
 }
-
-

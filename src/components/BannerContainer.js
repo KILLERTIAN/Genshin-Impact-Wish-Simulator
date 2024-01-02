@@ -48,7 +48,7 @@ function BannerContainer() {
           className={`lim-banner ${activeBanner === 'Raiden3.3.webp' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('Raiden3.3.webp');
-            handleSidebarReset();
+            // handleSidebarReset();
           }}
         >
           {activeBanner === 'Raiden3.3.webp' ? (
@@ -57,14 +57,16 @@ function BannerContainer() {
             <img src="images/198e6c25696161f5905fc2498788acb5.png" alt="Lim Banner" />
           )}
         </button>
-        <button className="wep-banner" onClick={() => handleBannerChange('weapon banner.jpg')}>
+        <button 
+        className={`std-banner ${activeBanner === 'weapon banner.jpg' ? 'active' : ''}`}
+        onClick={() => handleBannerChange('weapon banner.jpg')}>
           <img src="images/weapon banner.jpg" alt="Wep Banner" />
         </button>
         <button
           className={`std-banner ${activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('4136750a9f376ec5be876be16ec8bf96.png');
-            handleSidebarReset();
+            // handleSidebarReset();
           }}
         >
           {activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? (
@@ -83,19 +85,27 @@ function BannerContainer() {
         </div>
         <div className="wish-button">
           <button className="wish-button-bg">
-            {/* Use the imported image directly in the button */}
             <img src="images/wishButton.png" alt="" />
-            Wish x1
+
             <span>
+              Wish x1
+              <div className="line-break" />
+              <div>
               <img src="images/Item_Intertwined_Fate.webp" alt="" />x 1
+              </div>
+                
+              
+
             </span>
           </button>
           <button className="wish-button-bg">
-            {/* Use the imported image directly in the button */}
             <img src="images/wishButton.png" alt="" />
-            Wish x10
+
             <span>
+              Wish x10 <div className="line-break" />
+              <div>
               <img src="images/Item_Intertwined_Fate.webp" alt="" />x 10
+              </div>
             </span>
           </button>
         </div>

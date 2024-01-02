@@ -15,7 +15,6 @@
   max-height: 70%;
   max-width: 70%;
   margin-left: 50px;
-  display: flex;
   position: relative;
   z-index: 1;
   border-radius: 10px;
@@ -87,22 +86,27 @@
   z-index: 5;
 }
 
-
-.wish-button>img {
+.wish-button-bg>img {
   z-index: 1;
   position: relative;
   min-width: 180px;
-  max-width: 230px;
+  max-width: 220px;
 }
 
 .wish-button button span {
   display: flex;
-  flex-direction: row;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.wish-button button span div{
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.wish-button button span>img {
+.wish-button button span div>img {
   margin-right: 5px;
   height: 20px;
   width: 20px;

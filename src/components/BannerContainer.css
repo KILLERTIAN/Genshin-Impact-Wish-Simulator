@@ -99,12 +99,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #ca8020;
   z-index: 5;
 }
 .wish-button button span div{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ca8020;
 }
 .wish-button button span div>img {
   margin-right: 5px;

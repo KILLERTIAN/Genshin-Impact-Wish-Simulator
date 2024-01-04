@@ -13,9 +13,6 @@ function BannerContainer() {
     setActiveBanner(banner);
   };
 
-  const handleSidebarReset = () => {
-    setActiveBanner(null);
-  };
 
   return (
     <div className="container">
@@ -48,7 +45,6 @@ function BannerContainer() {
           className={`lim-banner ${activeBanner === 'Raiden3.3.webp' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('Raiden3.3.webp');
-            // handleSidebarReset();
           }}
         >
           {activeBanner === 'Raiden3.3.webp' ? (
@@ -66,7 +62,6 @@ function BannerContainer() {
           className={`std-banner ${activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? 'active' : ''}`}
           onClick={() => {
             handleBannerChange('4136750a9f376ec5be876be16ec8bf96.png');
-            // handleSidebarReset();
           }}
         >
           {activeBanner === '4136750a9f376ec5be876be16ec8bf96.png' ? (

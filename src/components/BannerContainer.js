@@ -80,13 +80,13 @@ function BannerContainer() {
         </div>
         <div className="wish-button">
           <button className="wish-button-bg">
-            <img src="images/wishButton.png" alt="" />
+            <img src="images/wishButton.png" />
 
             <span>
               Wish x1
               <div className="line-break" />
               <div>
-              <img src="images/Item_Intertwined_Fate.webp" alt="" />x 1
+              <img src="images/Item_Intertwined_Fate.webp"/>x 1
               </div>
                 
               

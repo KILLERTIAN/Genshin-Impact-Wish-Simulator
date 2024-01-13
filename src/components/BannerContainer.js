@@ -1,8 +1,6 @@
-// BannerContainer.js
-
 import React, { useState } from 'react';
 import './BannerContainer.css';
-import CurrencyBar from './CurrencyBar';
+// import CurrencyBar from './CurrencyBar';
 
 function BannerContainer() {
   const [selectedBanner, setSelectedBanner] = useState('ayato3.3.webp');

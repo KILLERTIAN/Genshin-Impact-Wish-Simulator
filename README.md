@@ -2,7 +2,7 @@
 
 Trying to make the realistic wish screen from Genshin Impact using React, HTML, CSS and JavaScript.
 
-Link:-
+Link:- to be added.
 
 Preview:-
 

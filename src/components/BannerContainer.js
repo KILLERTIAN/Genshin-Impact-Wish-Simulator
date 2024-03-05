@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './BannerContainer.css';
+import CurrencyBar from './CurrencyBar';
 // import CurrencyBar from './CurrencyBar';
 
 function BannerContainer() {
@@ -14,7 +15,7 @@ function BannerContainer() {
 
   return (
     <div className="container">
-      <div className="currency-bar">
+      {/* <div className="currency-bar">
         <div className="currency-item">
           <img src="images/Masterless Starglitter.webp" alt="Starglitter" />
           <span className="amount">50</span>
@@ -31,7 +32,8 @@ function BannerContainer() {
           <img src="images/Item_Intertwined_Fate.webp" alt="Starglitter" />
           <span className="amount">500</span>
         </div>
-      </div>
+      </div> */}
+      <CurrencyBar/>
       <div className="header-sidebar">
         <button
           className={`lim-banner ${activeBanner === 'ayato3.3.webp' ? 'active' : ''}`}
@@ -70,7 +72,7 @@ function BannerContainer() {
         </button>
       </div>
 
-      <section>
+      <section className='foot-wish'>
         <div className="footer">
           <button>Shop</button>
           <button>Details</button>

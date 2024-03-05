@@ -61,17 +61,26 @@
   cursor: pointer;
   border-radius: 5px;
 }
-
-.wish-button {
+.foot-wish{
   display: flex;
   position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+.wish-button {
+  display: flex;
+  position: relative;
   justify-content: space-evenly;
-  bottom: 2em;
-  right: 10%;
+  
 }
 
 .wish-button button {
   display: flex;
+  position: relative;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -115,9 +124,9 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 2.5em;
-  left: 15%;
+  position: relative;
+  /* bottom: 2.5em;
+  left: 15%; */
   display: flex;
 }
 
@@ -134,3 +143,4 @@
   box-shadow: -1px -1px 13px 0px #1b4e72ad;
   transition: background-color 0.3s ease;
 }
+
